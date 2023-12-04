@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <section id="page">
+      <header>
+        <section class="container-fluid contenedor-menu">
+            <div class="box-left">
+              <div class="box-menu-mobile">
+                <ion-icon name="menu-outline" id="mostrarBurgerMenu"></ion-icon>
+              </div>
+      
+              <div class="logo-tienda">
+                <a href="#">
+                  <h4>Gama Tech</h4>
+                </a>
+              </div>
+            </div>
+      
+            <div class="contenedor-buscador">
+              <input type="search" id="buscador" />
+              <ion-icon name="search-outline" id="buscar"></ion-icon>
+              <!-- <button id="buscar">Buscar</button> -->
+            </div>
+            <div class="contenedor-icono-carrito" id="showCarrito">
+              <div class="box-icono">
+                <ion-icon name="cart-outline" id="showCarrito"></ion-icon>
+              </div>
+              <div class="box-contador-carrito">
+                <span id="contadorCarrito">0</span>
+              </div>
+            </div>
+      </header>
+      <nav class="contenedor-categorias">
+        <section class="contenedor-categorias">
+          <div class="titulo-categorias">
+            <h3>CATEGORIAS</h3>
+          </div>
+          <div class="box-categorias">
+            <button class="btn-category" id="mostrarTodos">Todo</button>
+          </div>
+          <div class="box-categorias">
+            <button class="btn-category" data-category="Mouse Gamer">
+              Mouse Gamer
+            </button>
+          </div>
+          <div class="box-categorias">
+            <button class="btn-category" data-category="Teclados Gamer">
+              Teclados Gamer
+            </button>
+          </div>
+          <div class="box-categorias">
+            <button class="btn-category" data-category="Audifonos Gamer">
+              Audifonos Gamer
+            </button>
+          </div>
+          <div class="box-categorias">
+            <button class="btn-category" data-category="Tarjetas Graficas">
+              Tarjetas Gráficas
+            </button>
+          </div>
+          <div class="box-categorias">
+            <button class="btn-category" data-category="Monitor Gamer">
+              Monitor Gamer
+            </button>
+          </div>
+          <div class="box-categorias">
+            <button class="btn-category" data-category="Consolas">
+              Consolas
+            </button>
+          </div>
+        </section>
+      </nav>
+
+      <main>
+        <section class="contenedor-productos">
+          <div id="item-0" class="card-container">
+            <div class="card-productos">
+              <div class="img-producto">
+                <img src="assets/img/logitech-g502.webp" alt="" />
+              </div>
+              <div class="descripcion-producto">
+                <div class="disponibilidad-producto">
+                  <div class="tag-tipo-envio">
+                    <span>envio rapido</span>
+                  </div>
+                  <div class="tag-disponibilidad">
+                    <span> DISPONIBLE EN TIENDA </span>
+                  </div>
+                </div>
+                <div class="fabricante-producto">
+                  <span>Logitech</span>
+                </div>
+                <div class="titulo-producto">
+                  <span>Logitech G502</span>
+                </div>
+                <div class="categoria-producto">
+                  <p>Mouse Gamer</p>
+                </div>
+                <div class="precio-producto">
+                  <p>$49.99</p>
+                </div>
+                <div class="btn-agregar">
+                  <span>Agregar al carro</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="item-1" class="card-container">
+            <div class="card-productos">
+                <div class="img-producto">
+                  <img src="assets/img/razer-blackWidow-elite.webp" alt="" />
+                </div>
+                <div class="descripcion-producto">
+                  <div class="disponibilidad-producto">
+                    <div class="tag-tipo-envio">
+                      <span>envio rapido</span>
+                    </div>
+                    <div class="tag-disponibilidad">
+                      <span> DISPONIBLE EN TIENDA </span>
+                    </div>
+                  </div>
+                  <div class="fabricante-producto">
+                    <span>Razer</span>
+                  </div>
+                  <div class="titulo-producto">
+                    <span>Razer BlackWidow Elite</span>
+                  </div>
+                  <div class="categoria-producto">
+                    <p>Teclados Gamer</p>
+                  </div>
+                  <div class="precio-producto">
+                    <p>$169.99</p>
+                  </div>
+                  <div class="btn-agregar">
+                    <span>Agregar al carro</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div id="item-2" class="card-container">
+            <div class="card-productos">
+                <div class="img-producto">
+                  <img src="assets/img/steelSeries-arctis-pro.webp" alt="" />
+                </div>
+                <div class="descripcion-producto">
+                  <div class="disponibilidad-producto">
+                    <div class="tag-tipo-envio">
+                      <span>envio rapido</span>
+                    </div>
+                    <div class="tag-disponibilidad">
+                      <span> DISPONIBLE EN TIENDA </span>
+                    </div>
+                  </div>
+                  <div class="fabricante-producto">
+                    <span>SteelSeries</span>
+                  </div>
+                  <div class="titulo-producto">
+                    <span>SteelSeries Arctis Pro</span>
+                  </div>
+                  <div class="categoria-producto">
+                    <p>Audifonos Gamer</p>
+                  </div>
+                  <div class="precio-producto">
+                    <p>$179.99</p>
+                  </div>
+                  <div class="btn-agregar">
+                    <span>Agregar al carro</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div id="item-3" class="card-container">
+            <div class="card-productos">
+                <div class="img-producto">
+                  <img src="assets/img/asus-rog-strix-geforce-rtx-3080.webp" alt="" />
+                </div>
+                <div class="descripcion-producto">
+                  <div class="disponibilidad-producto">
+                    <div class="tag-tipo-envio">
+                      <span>envio rapido</span>
+                    </div>
+                    <div class="tag-disponibilidad">
+                      <span> DISPONIBLE EN TIENDA </span>
+                    </div>
+                  </div>
+                  <div class="fabricante-producto">
+                    <span>ASUS</span>
+                  </div>
+                  <div class="titulo-producto">
+                    <span>ASUS ROG Strix GeForce RTX 3080</span>
+                  </div>
+                  <div class="categoria-producto">
+                    <p>Tarjetas Graficas</p>
+                  </div>
+                  <div class="precio-producto">
+                    <p>$699.99</p>
+                  </div>
+                  <div class="btn-agregar">
+                    <span>Agregar al carro</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div id="item-4" class="card-container">
+            <div class="card-productos">
+                <div class="img-producto">
+                  <img src="assets/img/hyperx-alloy-origins.webp" alt="" />
+                </div>
+                <div class="descripcion-producto">
+                  <div class="disponibilidad-producto">
+                    <div class="tag-tipo-envio">
+                      <span>envio rapido</span>
+                    </div>
+                    <div class="tag-disponibilidad">
+                      <span> DISPONIBLE EN TIENDA </span>
+                    </div>
+                  </div>
+                  <div class="fabricante-producto">
+                    <span>HyperX</span>
+                  </div>
+                  <div class="titulo-producto">
+                    <span>HyperX Alloy Origins</span>
+                  </div>
+                  <div class="categoria-producto">
+                    <p>Teclados Gamer</p>
+                  </div>
+                  <div class="precio-producto">
+                    <p>$109.99</p>
+                  </div>
+                  <div class="btn-agregar">
+                    <span>Agregar al carro</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div id="item-5" class="card-container">
+            <div class="card-productos">
+                <div class="img-producto">
+                  <img src="assets/img/corsair-k70-rgb-mk-2.webp" alt="" />
+                </div>
+                <div class="descripcion-producto">
+                  <div class="disponibilidad-producto">
+                    <div class="tag-tipo-envio">
+                      <span>envio rapido</span>
+                    </div>
+                    <div class="tag-disponibilidad">
+                      <span> DISPONIBLE EN TIENDA </span>
+                    </div>
+                  </div>
+                  <div class="fabricante-producto">
+                    <span>Corsair</span>
+                  </div>
+                  <div class="titulo-producto">
+                    <span>Corsair K70 RGB MK.2</span>
+                  </div>
+                  <div class="categoria-producto">
+                    <p>Teclados Gamer</p>
+                  </div>
+                  <div class="precio-producto">
+                    <p>$159.99</p>
+                  </div>
+                  <div class="btn-agregar">
+                    <span>Agregar al carro</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div id="item-6" class="card-container">
+            <div class="card-productos">
+                <div class="img-producto">
+                  <img src="assets/img/lg-27GL850-B.webp" alt="" />
+                </div>
+                <div class="descripcion-producto">
+                  <div class="disponibilidad-producto">
+                    <div class="tag-tipo-envio">
+                      <span>envio rapido</span>
+                    </div>
+                    <div class="tag-disponibilidad">
+                      <span> DISPONIBLE EN TIENDA </span>
+                    </div>
+                  </div>
+                  <div class="fabricante-producto">
+                    <span>LG</span>
+                  </div>
+                  <div class="titulo-producto">
+                    <span>LG 27GL850-B</span>
+                  </div>
+                  <div class="categoria-producto">
+                    <p>Monitor Gamer</p>
+                  </div>
+                  <div class="precio-producto">
+                    <p>$499.99</p>
+                  </div>
+                  <div class="btn-agregar">
+                    <span>Agregar al carro</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="item-7" class="card-container">
+            <div class="card-productos">
+                <div class="img-producto">
+                  <img src="assets/img/sony-playStation-5.webp" alt="" />
+                </div>
+                <div class="descripcion-producto">
+                  <div class="disponibilidad-producto">
+                    <div class="tag-tipo-envio">
+                      <span>envio rapido</span>
+                    </div>
+                    <div class="tag-disponibilidad">
+                      <span> DISPONIBLE EN TIENDA </span>
+                    </div>
+                  </div>
+                  <div class="fabricante-producto">
+                    <span>Sony</span>
+                  </div>
+                  <div class="titulo-producto">
+                    <span>Sony PlayStation 5</span>
+                  </div>
+                  <div class="categoria-producto">
+                    <p>Consolas</p>
+                  </div>
+                  <div class="precio-producto">
+                    <p>$499.99</p>
+                  </div>
+                  <div class="btn-agregar">
+                    <span>Agregar al carro</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div id="item-8" class="card-container">
+            <div class="card-productos">
+                <div class="img-producto">
+                  <img src="assets/img/microsoft-xbox-series-x.webp" alt="" />
+                </div>
+                <div class="descripcion-producto">
+                  <div class="disponibilidad-producto">
+                    <div class="tag-tipo-envio">
+                      <span>envio rapido</span>
+                    </div>
+                    <div class="tag-disponibilidad">
+                      <span> DISPONIBLE EN TIENDA </span>
+                    </div>
+                  </div>
+                  <div class="fabricante-producto">
+                    <span>Microsoft</span>
+                  </div>
+                  <div class="titulo-producto">
+                    <span>Microsoft Xbox Series X</span>
+                  </div>
+                  <div class="categoria-producto">
+                    <p>Consolas</p>
+                  </div>
+                  <div class="precio-producto">
+                    <p>$499.99</p>
+                  </div>
+                  <div class="btn-agregar">
+                    <span>Agregar al carro</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div id="item-9" class="card-container">
+            <div class="card-productos">
+                <div class="img-producto">
+                  <img src="assets/img/logitech-g-pro-x-superlight.webp" alt="" />
+                </div>
+                <div class="descripcion-producto">
+                  <div class="disponibilidad-producto">
+                    <div class="tag-tipo-envio">
+                      <span>envio rapido</span>
+                    </div>
+                    <div class="tag-disponibilidad">
+                      <span> DISPONIBLE EN TIENDA </span>
+                    </div>
+                  </div>
+                  <div class="fabricante-producto">
+                    <span>Logitech</span>
+                  </div>
+                  <div class="titulo-producto">
+                    <span>Logitech G Pro X Superlight</span>
+                  </div>
+                  <div class="categoria-producto">
+                    <p>Mouse Gamer</p>
+                  </div>
+                  <div class="precio-producto">
+                    <p>$149.99</p>
+                  </div>
+                  <div class="btn-agregar">
+                    <span>Agregar al carro</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div id="item-10" class="card-container">
+          </div>
+          <div id="item-11" class="card-container">
+          
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="container">
+          <div class="footer-container">
+            <div class="footer-list">
+              <ul>
+                <h5>Ayuda</h5>
+                <li><a href="#">Centro de Ayuda</a></li>
+                <li><a href="#">Seguimiento de mi compra</a></li>
+                <li><a href="#">Formulario de contacto</a></li>
+                <li><a href="#">Bases de concursos</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-list">
+              <ul>
+                <h5>Nosotros</h5>
+                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#">Ventas corporativas</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Políticas de privacidad</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-list">
+              <ul>
+                <h5>Comunidad Gamer Tech</h5>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitch</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="medio-pago-container">
+            <div class="img-pago-container">
+              <div>
+                <h5>Medios de pago</h5>
+              </div>
+              <div class="iconos-pago-container">
+                <picture
+                  ><img
+                    src="./assets/img/webpay_Desktop.svg"
+                    alt="Icono Webpay"
+                /></picture>
+                <picture
+                  ><img
+                    src="./assets/img/mercadoPago_Desktop.svg"
+                    alt="icono Mercado Pago"
+                /></picture>
+                <picture
+                  ><img
+                    src="./assets/img/santander.svg"
+                    alt="logo Banco Santander"
+                /></picture>
+                <picture
+                  ><img
+                    src="./assets/img/bancoEstado_Desktop.svg"
+                    alt="logo Banco Estado"
+                /></picture>
+                <picture
+                  ><img src="./assets/img/fpay.svg" alt="logo Fpay"
+                /></picture>
+                <picture
+                  ><img
+                    src="./assets/img/transferencia_Desktop.svg"
+                    alt="icono transferencia"
+                /></picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="redes-info">
+            <div class="box-footer-redes">
+              <div>
+                <a href="#">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
